@@ -1,0 +1,10 @@
+#!name=Get Cookies Module
+#!desc=收集的各类用于获取Cookies的脚本
+
+[Script]
+# Nobyda
+京东 = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+爱奇艺 = type=http-request,pattern=^https?:\/\/iface(\d)?\.iqiyi\.com\/,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+[MITM]
+hostname = %APPEND% ms.jr.jd.com, me-api.jd.com ifac*.iqiyi.com
