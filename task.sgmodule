@@ -1,8 +1,0 @@
-#!name=Shawn Task Module
-#!desc=自用任务模块
-#!system=ios
-
-[Script]
-今日汇率 = type=cron,cronexp=0 8 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/exchange.js,wake-system=true
-彩云天气 = type=cron,cronexp=10 7-21/2 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js,wake-system=true
-联通签到抽奖 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js,wake-system=true
